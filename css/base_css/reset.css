@@ -8,9 +8,9 @@
     --bg-color:#75c2ff;
     --white-hover:#fff;
     --yellow-color:#ffe856;
-    --border: 1rem solid rgba(0, 0, 0, 0.1);
+    --border: 0.1rem solid rgba(0, 0, 0, 0.1);
     --border-hover: 0.1rem solid var(--dark-color);
-    --box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    --box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 
 * {

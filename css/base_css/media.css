@@ -1,33 +1,39 @@
-@media (max-width:991px){
+@media (max-width:991px) {
 
-    html{
+    html {
         font-size: 55%;
     }
 
 }
 
-@media (max-width:768px){
+@media (max-width:768px) {
 
-    html{
+    html {
         scroll-padding-top: 0;
     }
 
-    body{
+    body {
         padding-bottom: 6rem;
     }
 
-    .bottom-navbar{
+    .bottom-navbar {
         display: block;
     }
 
-    #search-btn{
+    #search-btn {
         display: inline-block;
     }
-    .header .header-1 .search-form{
-        width: 35rem !important;
+
+    .search-form {
+        /* width: 35rem !important; */
+        position: absolute;
+        top: -115%;
+        right: 2rem;
+        width: 90%;
+        box-shadow: var(--box-shadow);
     }
 
-    .header .header-1{
+    .header .header-bookhub {
         box-shadow: var(--box-shadow);
         position: relative;
         display: flex;
@@ -35,33 +41,31 @@
         align-items: center;
     }
 
-    .header .header-1 .search-form{
-        position:absolute;
-        top:-115%; right:2rem;
-        width: 90%;
-        box-shadow: var(--box-shadow);
+    .search-form.active {
+        top: 115%;
+        width: 92%;
     }
 
-    .header .header-1 .search-form.active{
-        top:115%;
-    }
-
-    .home .row .content{
+    .content_for-bookhub {
         text-align: center;
     }
 
-    .home .row .content h3{
+    .style-head {
         font-size: 3.5rem;
     }
+
     .icons-container {
         margin-left: 7rem;
+    }
+    .deal-image{
+        margin-left: 10rem;
     }
 
 }
 
-@media (max-width:450px){
+@media (max-width:450px) {
 
-    html{
+    html {
         font-size: 50%;
     }
 

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoOkHuB</title>
+
+    <!-- Icon link -->
+    <link rel="icon" href="../assest/icon-logo.png">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <script src="https://kit.fontawesome.com/a3941b6a24.js" crossorigin="anonymous"></script>
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="../css/component_css/bookstore.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+    <header class="header">
+        <div class="header-bookhub">
+            <a href="#" class="logo"><img src="../assest/icon-logo.png" alt="icon-logo">BoOkHuB</a>
+            <form action="" class="search-form">
+                <input type="search" name="" placeholder="Find your next favorite book" class="input-bookhub"
+                    id="search-box">
+                <label for="search-box" class="fas fa-search search-icon"></label>
+            </form>
+            <div class="icons">
+                <div id="search-btn" class="fas fa-search header-icons"></div>
+                <a href="#" class="fas fa-heart header-icons">
+                    <div class="badge-icon">1</div>
+                </a>
+                <a href="#" class="fas fa-shopping-cart header-icons">
+                    <div class="badge-icon">1</div>
+                </a>
+                <button id="login-btn" class="login-btn-bookhub">Login</button>
+                <button id="signUp-btn" class="signUp-btn-bookhub">Sign up</button>
+            </div>
+        </div>
+    </header>
+    <!-- header section ends -->
+
+    <!-- Filter section -->
+    <main class="bookhub-container">
+        <section class="filter-drawer">
+            <div class="filter-header">
+                <h3>Filters</h3>
+                <button class="btn">Clear</button>
+            </div>
+            <span class="hr_line-book"></span>
+            <div class="filter-category filter">
+                <h4>Category</h4>
+                <label for="fiction">
+                    <input type="checkbox" id="fiction" value="1">Fiction
+                </label>
+
+                <label for="Non-fiction">
+                    <input type="checkbox" id="Non-fiction" value="2">Non-Fiction
+                </label>
+
+                <label for="Children & Teens">
+                    <input type="checkbox" id="Children & Teens" value="3">Children & Teens
+                </label>
+
+                <label for="Personal Development">
+                    <input type="checkbox" id="Personal Development" value="3">Personal Development
+                </label>
+            </div>
+            <span class="hr_line-book"></span>
+            <div class="filter-price filter">
+                <h4>Sort by</h4>
+                <label for="low-price">
+                    <input type="radio" id="low-price" value="low" name="price">Price - Low to High
+                </label>
+                <label for="high-price">
+                    <input type="radio" id="high-price" value="high" name="price">Price - High to Low
+                </label>
+            </div>
+            <span class="hr_line-book"></span>
+            <div class="filter-rating filter">
+                <h4>Rating</h4>
+                <label for="rating-4">
+                    <input type="radio" id="rating-4" value="4" name="rating">4 Stars & above
+                </label>
+                <label for="rating-3">
+                    <input type="radio" id="rating-3" value="3" name="rating">3 Stars & above
+                </label>
+                <label for="rating-2">
+                    <input type="radio" id="rating-2" value="2" name="rating">2 Stars & above
+                </label>
+                <label for="rating-1">
+                    <input type="radio" id="rating-1" value="1" name="rating">1 Stars & above
+                </label>
+            </div>
+        </section>
+        <!-- Card section starts -->
+        <section class="cards_for-book">
+
+            <div class="card-vertical flex-items">
+                <div class="image-container badge-container">
+                    <img class="img-responsive card-img" src="../assest/fiction-book2.jpg" alt="fiction_books">
+                    <span class="badge bg-primary">#1Bestseller</span>
+                </div>
+                <div class="text-container">
+                    <h3 class="price-tag">$80</h3>
+                    <h4 class="heading-primary">The Queen of Nothing</h4>
+                    <p class="sub-heading">by Holly Black</p>
+
+                    <div class="buttons">
+                        <button type="button">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-vertical flex-items">
+                <div class="image-container badge-container">
+                    <img class="img-responsive card-img" src="../assest/fiction-book3.jpg" alt="fiction_books">
+                    <span class="badge bg-primary">#1Bestseller</span>
+                </div>
+                <div class="text-container">
+                    <h3 class="price-tag">$22.10</h3>
+                    <h4 class="heading-primary">A Trace of Poison</h4>
+                    <p class="sub-heading">by Colleen Cambridge</p>
+
+                    <div class="buttons">
+                        <button type="button">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-vertical flex-items">
+                <div class="image-container badge-container">
+                    <img class="img-responsive card-img" src="../assest/fiction-book4.jpg" alt="fiction_books">
+                    <span class="badge bg-primary">#1Bestseller</span>
+                </div>
+                <div class="text-container">
+                    <h3 class="price-tag">$16.99</h3>
+                    <h4 class="heading-primary">Apoca Lips</h4>
+                    <p class="sub-heading">by Piers Anthony</p>
+
+                    <div class="buttons">
+                        <button type="button">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-vertical flex-items">
+                <div class="image-container badge-container">
+                    <img class="img-responsive card-img" src="../assest/fiction-book5.jpg" alt="fiction_books">
+                    <span class="badge bg-primary">#1Bestseller</span>
+                </div>
+                <div class="text-container">
+                    <h3 class="price-tag">$4.99</h3>
+                    <h4 class="heading-primary">Imaginary Friends</h4>
+                    <p class="sub-heading">by Arlene F. Marks</p>
+
+                    <div class="buttons">
+                        <button type="button">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-vertical flex-items">
+                <div class="image-container badge-container">
+                    <img class="img-responsive card-img" src="../assest/fiction-book6.jpg" alt="fiction_books">
+                    <span class="badge bg-primary">#1Bestseller</span>
+                </div>
+                <div class="text-container">
+                    <h3 class="price-tag">$18.99</h3>
+                    <h4 class="heading-primary">After the Revolution
+                    </h4>
+                    <p class="sub-heading">by Robert Evans</p>
+
+                    <div class="buttons">
+                        <button type="button">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-vertical flex-items">
+                <div class="image-container badge-container">
+                    <img class="img-responsive card-img" src="../assest/fiction-book7.jpg" alt="fiction_books">
+                    <span class="badge bg-primary">#1Bestseller</span>
+                </div>
+                <div class="text-container">
+                    <h3 class="price-tag">$9.49</h3>
+                    <h4 class="heading-primary">The Measure of a Man
+                    </h4>
+                    <p class="sub-heading">by William W. Johnstone</p>
+
+                    <div class="buttons">
+                        <button type="button">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter_btn-book">
+                <button type="button" class="btn_for-bookhub"><i class="fas fa-filter"></i></button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer section starts  -->
+    <section class="footer-bookhub">
+        <div class="share">
+            <a href="https://twitter.com/ShilpeSaxena" target="_blank" class="fab fa-twitter footer_for-bookhub"></a>
+            <a href="https://www.linkedin.com/in/shilpe-saxena-heartly-winner/" target="_blank"
+                class="fab fa-linkedin footer_for-bookhub"></a>
+            <a href="https://github.com/shilpe26" target="_blank" class="fab fa-github footer_for-bookhub"></a>
+        </div>
+        <div class="credit">Made with 💙 by<span> Shilpe Saxena</span></div>
+    </section>
+    <!-- Footer section ends -->
+
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="../js/bookstore.js"></script>
+
+</body>
+
+</html>

@@ -25,7 +25,6 @@
     }
 
     .search-form {
-        /* width: 35rem !important; */
         position: absolute;
         top: -115%;
         right: 2rem;
@@ -57,8 +56,29 @@
     .icons-container {
         margin-left: 7rem;
     }
-    .deal-image{
+
+    .deal-image {
         margin-left: 10rem;
+    }
+
+    /* Filter section */
+    .invisible {
+        display: none;
+    }
+
+    section.filter-drawer {
+        position: absolute;
+        width: 60%;
+        z-index: 9;
+    }
+
+    main.bookhub-container {
+        grid-template-columns: 100%;
+        margin-top: -3rem;
+    }
+
+    div.filter_btn-book {
+        display: block;
     }
 
 }

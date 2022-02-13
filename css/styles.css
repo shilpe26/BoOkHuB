@@ -90,6 +90,9 @@ section {
     align-items: center;
     border-radius: .5rem;
 }
+#search-btn{
+    display: none;
+}
 
 .input-bookhub {
     font-size: 1.6rem;

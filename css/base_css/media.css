@@ -20,8 +20,8 @@
         display: block;
     }
 
-    #search-btn {
-        display: inline-block;
+    .icons #search-btn {
+        display: block;
     }
 
     .search-form {

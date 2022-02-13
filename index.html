@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoOkHuB</title>
+
+    <!-- Icon link -->
+    <link rel="icon" href="assest/icon-logo.png">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- Font Awesome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Css link -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <!-- header section starts  -->
+    <header class="header">
+        <div class="header-bookhub">
+            <a href="#" class="logo"><img src="./assest/icon-logo.png" alt="icon-logo">BoOkHuB</a>
+            <form action="" class="search-form">
+                <input type="search" name="" placeholder="Find your next favorite book" class="input-bookhub"
+                    id="search-box">
+                <label for="search-box" class="fas fa-search search-icon"></label>
+            </form>
+            <div class="icons">
+                <div id="search-btn" class="fas fa-search header-icons"></div>
+                <a href="#" class="fas fa-heart header-icons">
+                    <div class="badge-icon">1</div>
+                </a>
+                <a href="#" class="fas fa-shopping-cart header-icons">
+                    <div class="badge-icon">1</div>
+                </a>
+                <button id="login-btn" class="login-btn-bookhub">Login</button>
+                <button id="signUp-btn" class="signUp-btn-bookhub">Sign up</button>
+            </div>
+        </div>
+    </header>
+    <!-- header section ends -->
+
+    <!-- login form  -->
+    <div class="login-form-container">
+        <div id="close-login-btn" class="fas fa-times"></div>
+        <form class="login_form-bookhub" action="">
+            <h3 class="heading-login">Login</h3>
+            <input type="email" name="" class="box" placeholder="Email">
+            <input type="password" name="" class="box" placeholder="Password">
+            <div class="checkbox">
+                <input type="checkbox" name="" id="remember-me">
+                <label class="label-bookhub" for="remember-me"> remember me</label>
+            </div>
+            <input type="submit" value="Login" class="btn">
+            <p class="additional-desc">forget password ? <a href="#">click here</a></p>
+            <p class="additional-desc">don't have an account ? <button type="button" class="btn-warning">create
+                    one</button></p>
+        </form>
+    </div>
+
+    <!-- Sign up form  -->
+    <div class="login-form-container signup">
+        <div id="close-signup-btn" class="fas fa-times"></div>
+        <form class="login_form-bookhub" action="">
+            <h3 class="heading-login">SIGN UP</h3>
+            <input type="email" name="" class="box" placeholder="Email">
+            <input type="password" name="" class="box" placeholder="First name">
+            <input type="password" name="" class="box" placeholder="Last name">
+            <input type="password" name="" class="box" placeholder="Password">
+            <input type="password" name="" class="box" placeholder="Confirm password">
+            <input type="submit" value="sign up" class="btn">
+        </form>
+    </div>
+
+    <!-- home section starts  -->
+    <section class="home" id="home">
+        <div class="row">
+            <div class="content_for-bookhub">
+                <h3 class="style-head"><span>Reading made</span>
+                    <span class="style_text-yellow"><span class="style-yellow">better</span></h3>
+                <p> <span class="style-description">
+                        Read more books
+                        <br>
+                        Meet great people
+                        <br>
+                        Engage in meaningful conversations
+                    </span></p>
+                <a href="./components/bookstore.html" class="btn-bookooze">Bookstore</a>
+            </div>
+
+            <div class="books-slider">
+                <div>
+                    <img src="/assest/background-image.png" class="style-image" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- home section end  -->
+
+    <!-- Icons section starts  -->
+    <section class="icons-container">
+        <div class="icons">
+            <i class="fas fa-shipping-fast icons_for-bookhub"></i>
+            <div class="content">
+                <h3 class="port-shipping">Free shipping</h3>
+                <p class="facility_for-port">order over $100</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-lock icons_for-bookhub"></i>
+            <div class="content">
+                <h3 class="port-shipping">Secure payment</h3>
+                <p class="facility_for-port">100 secure payment</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-redo-alt icons_for-bookhub"></i>
+            <div class="content">
+                <h3 class="port-shipping">Easy returns</h3>
+                <p class="facility_for-port">10 days returns</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-headset icons_for-bookhub"></i>
+            <div class="content">
+                <h3 class="port-shipping">24/7 support</h3>
+                <p class="facility_for-port">call us anytime</p>
+            </div>
+        </div>
+    </section>
+    <!-- icons section ends -->
+
+    <!-- featured section starts  -->
+    <section class="featured" id="featured">
+        <h1 class="heading"> <span>Featured book</span> </h1>
+        <div class="swiper featured-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="./assest/book1.jpg" class="featured-images" alt="">
+                    </div>
+                    <div class="content_for-featured">
+                        <h3 class="head_for-featured">Featured book</h3>
+                        <div class="price">$15.99 <span>$20.99</span></div>
+                        <a href="#" class="btn">Add to cart</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="./assest/book2.jpg" class="featured-images" alt="">
+                    </div>
+                    <div class="content_for-featured">
+                        <h3 class="head_for-featured">Featured book</h3>
+                        <div class="price">$15.99 <span>$20.99</span></div>
+                        <a href="#" class="btn">Add to cart</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="./assest/book3.jpg" class="featured-images" alt="">
+                    </div>
+                    <div class="content_for-featured">
+                        <h3 class="head_for-featured">Featured book</h3>
+                        <div class="price">$15.99 <span>$20.99</span></div>
+                        <a href="#" class="btn">Add to cart</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="./assest/book4.jpg" class="featured-images" alt="">
+                    </div>
+                    <div class="content_for-featured">
+                        <h3 class="head_for-featured">Featured book</h3>
+                        <div class="price">$15.99 <span>$20.99</span></div>
+                        <a href="#" class="btn">Add to cart</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="./assest/book5.jpg" class="featured-images" alt="">
+                    </div>
+                    <div class="content_for-featured">
+                        <h3 class="head_for-featured">Featured book</h3>
+                        <div class="price">$15.99 <span>$20.99</span></div>
+                        <a href="#" class="btn">Add to cart</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="./assest/book6.jpg" class="featured-images" alt="">
+                    </div>
+                    <div class="content_for-featured">
+                        <h3 class="head_for-featured">Featured book</h3>
+                        <div class="price">$15.99 <span>$20.99</span></div>
+                        <a href="#" class="btn">Add to cart</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="./assest/book7.jpg" class="featured-images" alt="">
+                    </div>
+                    <div class="content_for-featured">
+                        <h3 class="head_for-featured">Featured book</h3>
+                        <div class="price">$15.99 <span>$20.99</span></div>
+                        <a href="#" class="btn">Add to cart</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="./assest/book8.jpg" class="featured-images" alt="">
+                    </div>
+                    <div class="content_for-featured">
+                        <h3 class="head_for-featured">Featured book</h3>
+                        <div class="price">$15.99 <span>$20.99</span></div>
+                        <a href="#" class="btn">Add to cart</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="./assest/book9.jpg" class="featured-images" alt="">
+                    </div>
+                    <div class="content_for-featured">
+                        <h3 class="head_for-featured">Featured book</h3>
+                        <div class="price">$15.99 <span>$20.99</span></div>
+                        <a href="#" class="btn">Add to cart</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="./assest/book10.jpg" class="featured-images" alt="">
+                    </div>
+                    <div class="content_for-featured">
+                        <h3 class="head_for-featured">Featured book</h3>
+                        <div class="price">$15.99 <span>$20.99</span></div>
+                        <a href="#" class="btn">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+    <!-- Featured section end -->
+
+    <!-- Arrivals section starts  -->
+    <section class="arrivals" id="arrivals">
+        <h1 class="heading"> <span>New Arrivals</span> </h1>
+        <div class="swiper arrivals-slider">
+            <div class="swiper-wrapper">
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="./assest/book14.jpg" alt="" class="arrivals-image">
+                    </div>
+                    <div class="content">
+                        <h3 class="arrivals-heading">New Arrivals</h3>
+                        <div class="arrivals-price">$15.99 <span>$20.99</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star arrivals-stars"></i>
+                            <i class="fas fa-star arrivals-stars"></i>
+                            <i class="fas fa-star arrivals-stars"></i>
+                            <i class="fas fa-star arrivals-stars"></i>
+                            <i class="fas fa-star-half-alt arrivals-stars"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="./assest/book15.jpg" alt="" class="arrivals-image">
+                    </div>
+                    <div class="content">
+                        <h3 class="arrivals-heading">New Arrivals</h3>
+                        <div class="arrivals-price">$15.99 <span>$20.99</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star arrivals-stars"></i>
+                            <i class="fas fa-star arrivals-stars"></i>
+                            <i class="fas fa-star arrivals-stars"></i>
+                            <i class="fas fa-star arrivals-stars"></i>
+                            <i class="fas fa-star-half-alt arrivals-stars"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="./assest/book11.jpg" alt="" class="arrivals-image">
+                    </div>
+                    <div class="content">
+                        <h3 class="arrivals-heading">New Arrivals</h3>
+                        <div class="arrivals-price">$15.99 <span>$20.99</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star arrivals-stars"></i>
+                            <i class="fas fa-star arrivals-stars"></i>
+                            <i class="fas fa-star arrivals-stars"></i>
+                            <i class="fas fa-star arrivals-stars"></i>
+                            <i class="fas fa-star-half-alt arrivals-stars"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="./assest/book12.jpg" alt="" class="arrivals-image">
+                    </div>
+                    <div class="content">
+                        <h3 class="arrivals-heading">New Arrivals</h3>
+                        <div class="arrivals-price">$15.99 <span>$20.99</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star arrivals-stars"></i>
+                            <i class="fas fa-star arrivals-stars"></i>
+                            <i class="fas fa-star arrivals-stars"></i>
+                            <i class="fas fa-star arrivals-stars"></i>
+                            <i class="fas fa-star-half-alt arrivals-stars"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="./assest/book13.jpg" alt="" class="arrivals-image">
+                    </div>
+                    <div class="content">
+                        <h3 class="arrivals-heading">New Arrivals</h3>
+                        <div class="arrivals-price">$15.99 <span>$20.99</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star arrivals-stars"></i>
+                            <i class="fas fa-star arrivals-stars"></i>
+                            <i class="fas fa-star arrivals-stars"></i>
+                            <i class="fas fa-star arrivals-stars"></i>
+                            <i class="fas fa-star-half-alt arrivals-stars"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="swiper arrivals-slider">
+            <div class="swiper-wrapper">
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="./assest/book6.jpg" alt="" class="arrivals-image">
+                    </div>
+                    <div class="content">
+                        <h3 class="arrivals-heading">New Arrivals</h3>
+                        <div class="arrivals-price">$15.99 <span>$20.99</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star arrivals-stars"></i>
+                            <i class="fas fa-star arrivals-stars"></i>
+                            <i class="fas fa-star arrivals-stars"></i>
+                            <i class="fas fa-star arrivals-stars"></i>
+                            <i class="fas fa-star-half-alt arrivals-stars"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="./assest/book3.jpg" alt="" class="arrivals-image">
+                    </div>
+                    <div class="content">
+                        <h3 class="arrivals-heading">New Arrivals</h3>
+                        <div class="arrivals-price">$15.99 <span>$20.99</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star arrivals-stars"></i>
+                            <i class="fas fa-star arrivals-stars"></i>
+                            <i class="fas fa-star arrivals-stars"></i>
+                            <i class="fas fa-star arrivals-stars"></i>
+                            <i class="fas fa-star-half-alt arrivals-stars"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="./assest/book8.jpg" alt="" class="arrivals-image">
+                    </div>
+                    <div class="content">
+                        <h3 class="arrivals-heading">New Arrivals</h3>
+                        <div class="arrivals-price">$15.99 <span>$20.99</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star arrivals-stars"></i>
+                            <i class="fas fa-star arrivals-stars"></i>
+                            <i class="fas fa-star arrivals-stars"></i>
+                            <i class="fas fa-star arrivals-stars"></i>
+                            <i class="fas fa-star-half-alt arrivals-stars"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="./assest/book9.jpg" alt="" class="arrivals-image">
+                    </div>
+                    <div class="content">
+                        <h3 class="arrivals-heading">New Arrivals</h3>
+                        <div class="arrivals-price">$15.99 <span>$20.99</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star arrivals-stars"></i>
+                            <i class="fas fa-star arrivals-stars"></i>
+                            <i class="fas fa-star arrivals-stars"></i>
+                            <i class="fas fa-star arrivals-stars"></i>
+                            <i class="fas fa-star-half-alt arrivals-stars"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="./assest/book4.jpg" alt="book4_image">
+                    </div>
+                    <div class="content">
+                        <h3 class="arrivals-heading">New Arrivals</h3>
+                        <div class="arrivals-price">$15.99 <span>$20.99</span></div>
+                        <div class="stars">
+                            <i class="fas fa-star arrivals-stars"></i>
+                            <i class="fas fa-star arrivals-stars"></i>
+                            <i class="fas fa-star arrivals-stars"></i>
+                            <i class="fas fa-star arrivals-stars"></i>
+                            <i class="fas fa-star-half-alt arrivals-stars"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Arrivals section ends -->
+
+    <!-- Deal section starts  -->
+    <section class="deal">
+        <div class="deal-content">
+            <h3 class="deal-heading">Deal of the day</h3>
+            <h1 class="off-deal">upto 50% off</h1>
+            <p class="deal-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde perspiciatis in atque
+                dolore tempora
+                quaerat at fuga dolorum natus velit.</p>
+            <a href="#" class="btn">Shop now</a>
+        </div>
+        <div class="image">
+            <img class="deal-image" src="./assest/book13.jpg" alt="">
+        </div>
+    </section>
+    <!-- Deal section ends -->
+
+    <!-- Footer section starts  -->
+    <section class="footer-bookhub">
+        <div class="share">
+            <a href="https://twitter.com/ShilpeSaxena" target="_blank" class="fab fa-twitter footer_for-bookhub"></a>
+            <a href="https://www.linkedin.com/in/shilpe-saxena-heartly-winner/" target="_blank"
+                class="fab fa-linkedin footer_for-bookhub"></a>
+            <a href="https://github.com/shilpe26" target="_blank" class="fab fa-github footer_for-bookhub"></a>
+        </div>
+        <div class="credit">Made with 💙 by<span> Shilpe Saxena</span></div>
+    </section>
+    <!-- Footer section ends -->
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- custom js file link  -->
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

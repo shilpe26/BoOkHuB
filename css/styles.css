@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+/* My Component Library link  */
+@import url("https://rebalance-ui.netlify.app/all_component.css");
+@import url("../css/base_css/reset.css");
+@import url("../css/base_css/media.css");
+
+.home {
+    background-color: var(--bg-color);
+    padding: 13rem 6%;
+}
+
+section {
+    padding: 6rem 6%;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.heading::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    height: .01rem;
+    background: rgba(0, 0, 0, .1);
+    z-index: -1;
+}
+
+.heading span {
+    font-size: 3rem;
+    padding: .5rem 2rem;
+    color: var(--black);
+    background: var(--white-hover);
+    border: 2px solid var(--secondary-gray);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.heading span:hover {
+    border-color: var(--yellow-color);
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    border-radius: .5rem;
+    color: black;
+    background: var(--yellow-color);
+    font-size: 1.7rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn:hover {
+    border: 2px solid var(--white-hover);
+}
+
+.header-bookhub {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    background-color: var(--bg-color);
+    padding: 1.5rem 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--primary-gray);
+}
+
+.search-form {
+    width: 50rem;
+    height: 5rem;
+    border: var(--border);
+    overflow: hidden;
+    background: var(--white-hover);
+    display: flex;
+    align-items: center;
+    border-radius: .5rem;
+}
+
+.input-bookhub {
+    font-size: 1.6rem;
+    padding: 0 1.2rem;
+    height: 100%;
+    width: 100%;
+    text-transform: none;
+    color: var(--black);
+}
+
+.search-icon {
+    font-size: 2.5rem;
+    padding-right: 1.5rem;
+    color: var(--black);
+    cursor: pointer;
+    margin-top: 0rem;
+}
+
+.search-icon:hover {
+    color: var(--secondary-gray);
+}
+
+.header-icons {
+    font-size: 2.5rem;
+    margin-left: 1.5rem;
+    color: var(--primary-gray);
+    cursor: pointer;
+}
+
+.badge-icon {
+    color: var(--primary-gray);
+    border: 2px solid var(--yellow-color);
+    border-radius: 50%;
+    font-size: 1.6rem;
+    margin-top: -2.2rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    text-align: center;
+    background-color: var(--yellow-color);
+    transform: translate(25%, -50%);
+    margin-left: 1rem;
+}
+
+.header-icons:hover {
+    color: var(--secondary-gray);
+}
+
+/* login css */
+.login-btn-bookhub {
+    border-radius: 4px;
+    border: solid 2px var(--secondary-gray);
+    padding: 0.7rem 1.5rem;
+    margin-left: 1.8rem;
+    cursor: pointer;
+    background-color: var(--bg-color);
+}
+
+.login-btn-bookhub:hover {
+    border-color: var(--white-hover);
+}
+
+.signUp-btn-bookhub {
+    border-radius: 4px;
+    border: solid 2px var(--border-color);
+    padding: 0.7rem 1.5rem;
+    margin-left: 1.8rem;
+    cursor: pointer;
+    background-color: var(--yellow-color);
+}
+
+.login-form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, .9);
+    position: fixed;
+    top: 0;
+    right: -105%;
+    z-index: 10000;
+    height: 100%;
+    width: 100%;
+}
+
+.login-form-container.active {
+    right: 0;
+}
+
+.login_form-bookhub {
+    background: var(--white-hover);
+    border: var(--border);
+    width: 40rem;
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    margin: 2rem;
+}
+
+.heading-login {
+    font-size: 2.5rem;
+    color: var(--black);
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.box {
+    width: 100%;
+    margin: .7rem 0;
+    font-size: 1.6rem;
+    border: var(--border);
+    border-radius: .5rem;
+    padding: 1rem 1.2rem;
+    color: var(--black);
+    text-transform: none;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: 1rem 0;
+}
+
+.label-bookhub {
+    font-size: 1.5rem;
+    color: var(--dark-color);
+    cursor: pointer;
+}
+
+.login-form-container form .btn {
+    text-align: center;
+    width: 100%;
+    margin: 1.5rem 0;
+}
+
+.additional-desc {
+    padding-top: .8rem;
+    color: var(--dark-color);
+    font-size: 1.5rem;
+}
+
+/* Close button css */
+#close-login-btn {
+    position: absolute;
+    top: 1.5rem;
+    right: 2.5rem;
+    font-size: 5rem;
+    color: var(--primary-gray);
+    cursor: pointer;
+}
+
+#close-signup-btn {
+    position: absolute;
+    top: 1.5rem;
+    right: 2.5rem;
+    font-size: 5rem;
+    color: var(--primary-gray);
+    cursor: pointer;
+}
+
+.btn-warning {
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.content_for-bookhub {
+    flex: 1 1 42rem;
+}
+
+.style-description {
+    font-size: 2rem;
+    line-height: 34px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    color: var(--dark-color);
+    font-weight: 600;
+}
+
+.style-image {
+    position: relative;
+    top: 5rem;
+    height: 300px;
+    max-width: 100%;
+    margin: auto;
+    left: 0%;
+}
+
+.style-yellow {
+    color: var(--yellow-color);
+}
+
+.style-head {
+    font-weight: 800;
+    font-size: 42px;
+    line-height: 52px;
+    letter-spacing: -.5px;
+}
+
+.btn-bookooze {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.9rem 3rem;
+    border-radius: 0.5rem;
+    color: var(--primary-gray);
+    background-color: var(--yellow-color);
+    font-size: 1.7rem;
+    cursor: pointer;
+    font-weight: 900;
+    border: 2px solid var(--yellow-color);
+}
+
+.btn-bookooze:hover {
+    border-color: var(--white-hover);
+}
+
+.books-slider {
+    flex: 1 1 67rem;
+    margin-top: 2rem;
+}
+
+.icons-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 0;
+}
+
+.icons_for-bookhub {
+    font-size: 3.5rem;
+    color: var(--primary-gray);
+}
+
+.port-shipping {
+    font-size: 2.2rem;
+    color: var(--black);
+    padding-bottom: .5rem;
+}
+
+.facility_for-port {
+    font-size: 1.4rem;
+    color: var(--dark-color);
+}
+
+/* Featured books */
+.box {
+    margin: 2rem 0;
+    position: relative;
+    overflow: hidden;
+    border: var(--border);
+    text-align: center;
+    cursor: pointer;
+}
+
+.box:hover {
+    border-color: var(--border-hover);
+}
+
+.featured-images {
+    padding: 1rem;
+    background: linear-gradient(15deg, #eee 30%, #fff 30.1%);
+    height: 25rem;
+}
+
+.content_for-featured {
+    background: #eee;
+    padding: 1.5rem;
+}
+
+.head_for-featured {
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.price {
+    font-size: 2.2rem;
+    color: var(--black);
+    padding-top: 1rem;
+}
+
+.price span {
+    font-size: 1.5rem;
+    color: var(--dark-color);
+    text-decoration: line-through;
+}
+
+/* Arrivals section starts */
+.swiper-button-next,
+.swiper-button-prev {
+    border: var(--border-hover);
+    height: 4rem;
+    width: 4rem;
+    color: var(--black);
+    background-color: var(--white-hover);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 2rem;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background: var(--black);
+    color: var(--white-hover);
+}
+
+.arrivals .arrivals-slider .box {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+    border: var(--border);
+    margin: 1rem 0;
+}
+
+.arrivals .arrivals-slider .box:hover {
+    border: var(--border-hover);
+}
+
+.arrivals .arrivals-slider .box .image img {
+    height: 15rem;
+}
+
+.arrivals-heading {
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.arrivals-price {
+    font-size: 2.2rem;
+    color: var(--black);
+    padding-bottom: .5rem;
+}
+
+.arrivals-price span {
+    font-size: 1.5rem;
+    color: var(--dark-color);
+    text-decoration: line-through;
+}
+
+.arrivals-stars {
+    font-size: 1.5rem;
+    color: var(--bg-color);
+}
+
+/* Deal section starts  */
+.deal {
+    background-color: #f3f3f3;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.deal-content {
+    flex: 1 1 42rem;
+}
+
+.deal-heading {
+    color: var(--bg-color);
+    font-size: 2.5rem;
+    padding-bottom: .5rem;
+}
+
+.off-deal {
+    color: var(--black);
+    font-size: 4rem;
+}
+
+.deal-desc {
+    padding: 1rem 0;
+    color: var(--dark-color);
+    font-size: 1.4rem;
+    line-height: 2;
+}
+
+/* Footer css */
+.footer-bookhub {
+    margin-bottom: -6rem;
+}
+
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.share {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.footer_for-bookhub {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: var(--white-hover);
+    background: var(--bg-color);
+    margin: 0 .3rem;
+    border-radius: 50%;
+}
+
+.footer_for-bookhub:hover {
+    background-color: var(--dark-color);
+}
+
+.credit {
+    border-top: var(--border);
+    margin-top: 2rem;
+    padding: 0 1rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: var(--dark-color);
+    text-align: center;
+}
+
+.credit span {
+    color: var(--primary-gray);
+}
+
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10000;
+    background: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader-container.active {
+    display: none;
+}
+
+.loader-container img {
+    height: 10rem;
+}

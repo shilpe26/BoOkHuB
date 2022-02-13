@@ -61,6 +61,7 @@
         margin-left: 10rem;
     }
 
+
     /* Filter section */
     .invisible {
         display: none;
@@ -81,6 +82,17 @@
         display: block;
     }
 
+    main.cart-bookhub {
+        margin-top: 0rem;
+    }
+
+    .cart-book {
+        display: flex;
+    }
+
+    .cart-bookhub .cart-1 {
+        width: 90%;
+    }
 }
 
 @media (max-width:450px) {

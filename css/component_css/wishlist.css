@@ -1,0 +1,13 @@
+@import url("https://rebalance-ui.netlify.app/all_component.css");
+@import url("../base_css/media.css");
+@import url("../base_css/reset.css");
+@import url("../styles.css");
+@import url("../component_css/bookstore.css");
+@import url("../component_css/cart.css");
+
+.button-close-wishlist {
+    cursor: pointer;
+    height: 3rem;
+    width: 3rem;
+    margin-left: 18rem;
+}

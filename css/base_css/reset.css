@@ -5,10 +5,10 @@
     --secondary-gray: #ecf8f8;
     --dark-color: #393d3f;
     --light-color: #e9ecef;
-    --bg-color:#75c2ff;
-    --white-hover:#fff;
-    --yellow-color:#ffe856;
-    --price-tag:#ED3C60;
+    --bg-color: #75c2ff;
+    --white-hover: #fff;
+    --yellow-color: #ffe856;
+    --price-tag: #ED3C60;
     --border: 0.1rem solid rgba(0, 0, 0, 0.1);
     --border-hover: 0.1rem solid var(--dark-color);
     --box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);

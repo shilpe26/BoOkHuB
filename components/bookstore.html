@@ -35,10 +35,10 @@
             </form>
             <div class="icons">
                 <div id="search-btn" class="fas fa-search header-icons"></div>
-                <a href="#" class="fas fa-heart header-icons">
+                <a href="./wishlist.html" class="fas fa-heart header-icons">
                     <div class="badge-icon">1</div>
                 </a>
-                <a href="#" class="fas fa-shopping-cart header-icons">
+                <a href="./cart.html" class="fas fa-shopping-cart header-icons">
                     <div class="badge-icon">1</div>
                 </a>
                 <button id="login-btn" class="login-btn-bookhub">Login</button>
@@ -217,10 +217,40 @@
         <div class="credit">Made with 💙 by<span> Shilpe Saxena</span></div>
     </section>
     <!-- Footer section ends -->
+    <!-- login form  -->
+    <div class="login-form-container">
+        <div id="close-login-btn" class="fas fa-times"></div>
+        <form class="login_form-bookhub" action="">
+            <h3 class="heading-login">Login</h3>
+            <input type="email" name="" class="box" placeholder="Email">
+            <input type="password" name="" class="box" placeholder="Password">
+            <div class="checkbox">
+                <input type="checkbox" name="" id="remember-me">
+                <label class="label-bookhub" for="remember-me"> remember me</label>
+            </div>
+            <input type="submit" value="Login" class="btn">
+            <p class="additional-desc">forget password ? <a href="#">click here</a></p>
+            <p class="additional-desc">don't have an account ? <button type="button" class="btn-warning">create
+                    one</button></p>
+        </form>
+    </div>
 
-
+    <!-- Sign up form  -->
+    <div class="login-form-container signup">
+        <div id="close-signup-btn" class="fas fa-times"></div>
+        <form class="login_form-bookhub" action="">
+            <h3 class="heading-login">SIGN UP</h3>
+            <input type="email" name="" class="box" placeholder="Email">
+            <input type="password" name="" class="box" placeholder="First name">
+            <input type="password" name="" class="box" placeholder="Last name">
+            <input type="password" name="" class="box" placeholder="Password">
+            <input type="password" name="" class="box" placeholder="Confirm password">
+            <input type="submit" value="sign up" class="btn">
+        </form>
+    </div>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="../js/bookstore.js"></script>
+    <script src="../js/script.js"></script>
 
 </body>
 

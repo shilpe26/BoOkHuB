@@ -55,6 +55,22 @@
     color: var(--dark-color);
 }
 
+.clear-btn {
+    background-color: var(--yellow-color);
+    padding: 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    width: 8rem;
+    font-size: 1.5rem;
+    transition: all 0.6s ease-in-out;
+}
+
+.clear-btn:hover {
+    color: var(--primary-gray);
+    box-shadow: var(--bg-color) 0px 19px 43px;
+    transform: translate3d(0px, -1px, 0px);
+}
+
 /* Cards for book css */
 .cards_for-book {
     display: flex;
